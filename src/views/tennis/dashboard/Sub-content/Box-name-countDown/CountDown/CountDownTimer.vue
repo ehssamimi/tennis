@@ -1,7 +1,7 @@
 <template>
   <countdown :time="`${number}` * 60 * 60 * 1000">
     <template slot-scope="props" >
-      <p class="text-white mb-0 FS1 ">
+      <p class="text-white mb-0 Fs5 font-w600 ">
         {{ props.hours }}:{{ props.minutes }}:{{ props.seconds }}
       </p>
 

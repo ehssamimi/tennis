@@ -1,0 +1,133 @@
+
+.Fs-v-0-5{
+  font-size: 0.5vw!important;
+}
+.Fs-v-0-6{
+  font-size: 0.6vw!important;
+}
+
+.Fs-v-0-7{
+  font-size: 0.7vw!important;
+}
+.Fs-v-0-9{
+  font-size: 0.9vw!important;
+}
+.Fs-v-1{
+  font-size: 1vw!important;
+}
+.Fs-v-1-3{
+  font-size: 1.3vw!important;
+}
+.Fs-v-1-5{
+  font-size: 1.5vw!important;
+}
+.Fs-v-1-7{
+  font-size: 1.7vw!important;
+}
+.Fs-v-2{
+  font-size: 2vw!important;
+}
+.p-box{
+  padding-right: 14px!important;
+  padding-left: 14px!important;
+}
+
+
+
+
+
+
+
+.Fs0-0 {
+  font-size: calc(0.2vw + 0.2em) !important;
+}
+.Fs0-1 {
+  font-size: calc(0.3vw + 0.3em) !important;
+}
+.Fs0-2 {
+  font-size: calc(0.3vw + 0.4em) !important;
+}.Fs0-3 {
+   font-size: calc(0.4vw + 0.4em) !important;
+ }
+.Fs1 {
+  font-size: calc(0.5vw + 0.5em) !important;
+}
+
+.Fs2 {
+  font-size: calc(0.7vw + 0.5em)!important;
+}
+
+.Fs3 {
+  font-size: calc(0.7vw + 0.7em)!important;
+}
+
+.Fs4 {
+  font-size: calc(1vw + 0.7em)!important;
+}
+
+.Fs5 {
+  font-size: calc(1vw + 1em)!important;
+}
+
+.Fs6 {
+  font-size: calc(1.5vw + 1em)!important;
+}
+.mt-3vw{
+  margin-top:  calc( 1.2vw + 0.7em)!important;
+}
+.p-box-top{
+  padding: 0  1.5rem 1.8rem;
+}.p-box-bottom{
+  padding: 1.8rem  1.5rem 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  .p-box-top{
+    padding: 1rem;
+  }.p-box-bottom{
+     padding: 1rem;
+   }
+  .Fs-v-1-5{
+    font-size:  0.6em !important;
+
+  }
+  .form-control-sm {
+    height: calc(1.5em + 2px) !important;
+  }
+  .Fs0-1 {
+    font-size: calc(0.6em) !important;
+  }
+  .p-box{
+    padding-right: 8px!important;
+    padding-left: 8px!important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .p-box-top{
+    padding: 1rem;
+  }.p-box-bottom{
+     padding: 1rem;
+   }
+  .form-control-sm {
+    height: calc(1.5em + 2px) !important;
+  }
+  .Fs-v-0-6{
+    font-size: 0.4em!important;
+  }
+  .p-box{
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+}
+@media screen and (max-width:1024px) {
+
+  .Fs-v-0-6{
+    font-size: 0.4em!important;
+  }
+  .p-box{
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+}

@@ -1,7 +1,7 @@
 <template>
-  <div class="w-75 d-flex flex-column justify-content-between align-items-center">
+  <div class="w-100 d-flex flex-column justify-content-between align-items-center">
     <CountDownTimer :number="number"/>
-    <span class="text-white Fs0-1">{{name}}</span>
+    <span class="text-white Fs0-1 mt-2">{{name}}</span>
   </div>
 </template>
 

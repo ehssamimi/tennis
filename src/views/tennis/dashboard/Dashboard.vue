@@ -10,61 +10,111 @@
       <b-row class="row-deck">
 
         <!-- Fields   -->
-        <b-col lg="8">
-          <base-block title="مدیریت زمین ها  " dir="rtl" :bLine="false"  class="Fs4 text-right br-box-t p-0   position-relative " content-full>
+        <b-col xl="8">
+          <base-block title="مدیریت زمین ها  " dir="rtl"     class="Fs4 text-right br-box-t p-0   position-relative " content-full>
             <b-row>
-              <b-col sm="8" class="position-relative row">
+              <b-col sm="8" class="position-relative row  ">
 
-                <b-col sm="6" class="position-relative row">
-                  <b-col sm="12" class="position-relative  m-0 d-flex flex-column justify-content-around h-100">
-                    <div class="w-100 position-relative br-box-img" @click="form=!form">
-                      <div class="position-absolute w-100  pr-4 mt-3  " >
-                        <HeaderBoxField :types="`red-btn`" :numberField="3"/>
-                        <p class="  text-white Fs0-3 mt-4 mb-0 text-center"   >زمین آزاد است</p>
-                      </div>
-                      <b-img src="img/S-img/bg-light.png" class=" w-100 " />
+
+                <b-col cols="6" @click="form=!form" class=" p-box-top    h-min10em">
+                  <div class="w-100 position-relative p-3 Bg-light h-100  d-flex flex-column   br-box-img">
+                    <HeaderBoxField :types="`white-btn`" :numberField="1"/>
+                    <div class="mt-3vw">
+                      <p class="  text-white Fs-v-1-3  font-w600  mb-0 text-center text-nowrap"   >زمین غیر فعال است</p>
                     </div>
-                    <div class="w-100 position-relative">
-                      <div class="position-absolute w-100  pr-4 mt-3 " >
-                        <HeaderBoxField :types="`green-btn`" :numberField="4"/>
-                        <p class="  text-white Fs0-3 mt-4 mb-0 text-center"   >زمین غیر فعال است</p>
-                      </div>
-                      <b-img src="img/S-img/bg-black.png" class="w-100  br-box-img " />
-                    </div>
-                  </b-col>
+                  </div>
+                  <b-img src="img/S-img/bg-light.png" class=" w-100  h-100 d-none" />
+
                 </b-col>
-                <b-col sm="6" class="position-relative   h-100">
-                  <b-col sm="12" class="position-relative  m-0 d-flex flex-column justify-content-around h-100">
-                    <div class="w-100 position-relative">
-                      <div class="position-absolute w-100  pr-4  mt-3" >
-                        <HeaderBoxField :types="`green-btn`" :numberField="1"/>
-                        <div class="mt-3">
-                          <BoxNameCountDown :number="2" :name="`کیوان یعقوبیان`"/>
 
-                        </div>
 
-                      </div>
-                      <b-img src="img/S-img/bg-black.png" class="w-100 br-box-img" />
+
+                <b-col cols="6" @click="form=!form" class="p-box-top   h-min10em">
+                  <div class="w-100 position-relative p-3 Bg-main h-100  d-flex flex-column   br-box-img">
+                    <HeaderBoxField :types="`green-btn`" :numberField="2"/>
+                    <div class="mt-3vw">
+                      <p class="  text-white Fs-v-1-3  font-w600  mb-0 text-center text-nowrap"   >زمین آزاد است</p>
                     </div>
-                    <div class="w-100 position-relative">
-                      <div class="position-absolute w-100  pr-4 mt-3  " >
-                        <HeaderBoxField :types="`green-btn`" :numberField="2"/>
-                        <div class="mt-3">
-                        <BoxNameCountDown :number="1" :name="`مهدی فلاحتی`"/>
-                        </div>
-                      </div>
-                      <b-img src="img/S-img/bg-black.png" class="w-100 br-box-img" />
-                    </div>
-                  </b-col>
+                  </div>
+                  <b-img src="img/S-img/bg-light.png" class=" w-100  h-100 d-none" />
+
                 </b-col>
+
+
+                <b-col cols="6" @click="form=!form" class="p-box-bottom h-min10em">
+                  <div class="w-100 position-relative p-3 Bg-main h-100  d-flex flex-column   br-box-img">
+                    <HeaderBoxField :types="`red-btn`" :numberField="3"/>
+                    <div class="mt-3">
+                      <BoxNameCountDown :number="2" :name="`کیوان یعقوبیان`"/>
+                    </div>
+                  </div>
+                  <b-img src="img/S-img/bg-light.png" class=" w-100  h-100 d-none" />
+
+                </b-col>
+                <b-col cols="6" @click="form=!form" class="  p-box-bottom h-min10em">
+                  <div class="w-100 position-relative p-3 Bg-main h-100  d-flex flex-column   br-box-img">
+                    <HeaderBoxField :types="`red-btn`" :numberField="4"/>
+                    <div class="mt-3">
+                      <BoxNameCountDown :number="2" :name="`مهدی فلاحتی`"/>
+                    </div>
+                  </div>
+                  <b-img src="img/S-img/bg-light.png" class=" w-100  h-100 d-none" />
+
+                </b-col>
+
+
+
+
+
+
+<!--                <b-col sm="6" class="position-relative row">-->
+<!--                  <b-col sm="12" class="position-relative  m-0 d-flex flex-column justify-content-around h-100 p-box">-->
+<!--                    <div class="w-100 position-relative br-box-img" @click="form=!form">-->
+<!--                      <div class="position-absolute w-100  pr-4 mt-3  " >-->
+<!--                        <HeaderBoxField :types="`red-btn`" :numberField="3"/>-->
+<!--                        <p class="  text-white Fs0-3 mt-4 mb-0 text-center"   >زمین آزاد است</p>-->
+<!--                      </div>-->
+<!--                      <b-img src="img/S-img/bg-light.png" class=" w-100 " />-->
+<!--                    </div>-->
+<!--                    <div class="w-100 position-relative">-->
+<!--                      <div class="position-absolute w-100  pr-4 mt-3 " >-->
+<!--                        <HeaderBoxField :types="`green-btn`" :numberField="4"/>-->
+<!--                        <p class="  text-white Fs0-3 mt-4 mb-0 text-center"   >زمین غیر فعال است</p>-->
+<!--                      </div>-->
+<!--                      <b-img src="img/S-img/bg-black.png" class="w-100  br-box-img " />-->
+<!--                    </div>-->
+<!--                  </b-col>-->
+<!--                </b-col>-->
+<!--                <b-col sm="6" class="position-relative   h-100">-->
+<!--                  <b-col sm="12" class="position-relative  m-0 d-flex flex-column justify-content-around h-100 p-box">-->
+<!--                    <div class="w-100 position-relative">-->
+<!--                      <div class="position-absolute w-100  pr-4  mt-3" >-->
+<!--                        <HeaderBoxField :types="`green-btn`" :numberField="1"/>-->
+<!--                        <div class="mt-3">-->
+<!--                          <BoxNameCountDown :number="2" :name="`کیوان یعقوبیان`"/>-->
+
+<!--                        </div>-->
+
+<!--                      </div>-->
+<!--                      <b-img src="img/S-img/bg-black.png" class="w-100 br-box-img" />-->
+<!--                    </div>-->
+<!--                    <div class="w-100 position-relative">-->
+<!--                      <div class="position-absolute w-100  pr-4 mt-3  " >-->
+<!--                        <HeaderBoxField :types="`green-btn`" :numberField="2"/>-->
+<!--                        <div class="mt-3">-->
+<!--                        <BoxNameCountDown :number="1" :name="`مهدی فلاحتی`"/>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <b-img src="img/S-img/bg-black.png" class="w-100 br-box-img" />-->
+<!--                    </div>-->
+<!--                  </b-col>-->
+<!--                </b-col>-->
 
 
               </b-col>
-              <b-col sm="4">
-
-
+              <b-col sm="4" class="p-0 Bg-Box-right br-round">
                 <div class="w-100 position-relative  ">
-                  <div  v-if="form"  class="w-100 position-absolute h-100 p-3">
+                  <div  v-if="form"  class="w-100   h-100 p-3">
                     <div class="w-100 border-b-s">
                       <h4 class="block-title pb-3 Fs0-3 ">
                         زمین شماره سه
@@ -81,12 +131,12 @@
                         <b-form-group label="بازه زمانی  " label-for="data-interval" class="Fs0-1 mb-1">
                           <div class="w-100 d-flex ">
                             <b-col cols="4   " class="pr-0" >
-                              <b-form-group label-cols-sm="3" label="از" label-for="from" class="mb-1">
+                              <b-form-group label-cols-sm="3" label="از" label-for="from" class="mb-1 Fs-v-0-5">
                                 <b-form-input id="from"   class="b-input-box   outline-none " size="sm" ></b-form-input>
                               </b-form-group>
                             </b-col>
                             <b-col cols="4 " class="pr-0" >
-                              <b-form-group label-cols-sm="3" label="تا" label-for="to" class="mb-1">
+                              <b-form-group label-cols-sm="3" label="تا" label-for="to" class="mb-1 Fs-v-0-5">
                                 <b-form-input id="to"   class="b-input-box outline-none " size="sm" ></b-form-input>
                               </b-form-group>
                             </b-col>
@@ -121,9 +171,9 @@
                             <b-col cols="4 " class="pr-0" >
                               <b-form-group label="تعداد سانس " label-for="data-field" class="Fs0-1 mb-1">
                                 <div class="w-100 d-flex form-control form-control-sm   br-round ">
-                               <b-col cols="3" class="p-0 cursor-pointer " @click="number=number+1"> <i  class="fa   fa-plus"></i></b-col>
-                               <b-col cols="6" class="d-flex justify-content-center">{{number}}</b-col>
-                               <b-col cols="3" class="p-0 cursor-pointer"  @click="number=number-1"><i  class=" fa   fa-minus"></i></b-col>
+                               <b-col cols="3" class="p-0 cursor-pointer  d-flex align-items-center " @click="number=number+1"> <i  class=" Fs0-1 fa   fa-plus"></i></b-col>
+                               <b-col cols="6" class="d-flex justify-content-center Fs1 d-flex align-items-center">{{number}}</b-col>
+                               <b-col cols="3" class="p-0 cursor-pointer Fs1 d-flex align-items-center"  @click="number=number-1"><i  class=" Fs0-1 fa   fa-minus"></i></b-col>
 
                                 </div>
                                </b-form-group>
@@ -203,12 +253,12 @@
                       <p class="Fs0-1 mb-0">تغییر زمان کاری  </p>
                       <div class="w-100 d-flex ">
                         <b-col cols="4   " class="pr-0" >
-                          <b-form-group label-cols-sm="3" label="از" label-for="from" class="mb-1">
+                          <b-form-group label-cols-sm="3" label="از" label-for="from"  class="Fs0-1 mb-1">
                             <b-form-input id="from"   class="b-input-box   outline-none " size="sm" ></b-form-input>
                           </b-form-group>
                         </b-col>
                         <b-col cols="4 " class="pr-0" >
-                          <b-form-group label-cols-sm="3" label="تا" label-for="to" class="mb-1">
+                          <b-form-group label-cols-sm="3" label="تا" label-for="to"  class="Fs0-1 mb-1">
                             <b-form-input id="to"   class="b-input-box outline-none " size="sm" ></b-form-input>
                           </b-form-group>
                         </b-col>
@@ -228,7 +278,7 @@
 
                 </div>
 
-                <b-img src="img/S-img/b-form.png" class="w-100" />
+                <b-img src="img/S-img/b-form.png" class="w-100 d-none" />
               </b-col>
             </b-row>
 
@@ -238,17 +288,17 @@
 
         <!-- Latest Customers -->
         <b-col xl="4" dir="rtl"  >
-          <base-block title="لیست رزروها " dir="rtl"  class="Fs4 text-right br-box-t p-0   position-relative "  :bLine="true" content-full>
+          <base-block title="لیست رزروها " dir="rtl"  class="Fs4 text-right br-box-t p-0   position-relative "  bLine content-full>
             <div class="d-flex flex-column ">
-              <b-table-simple   hover borderless class="table-vcenter font-size-sm mb-0 position-relative   ">
-                <!--              <div class="border-t-s"></div>-->
+              <b-table-simple   hover borderless class="table-vcenter font-size-sm mb-0 position-relative w100  m-0 p-0 " style="table-layout: fixed">
+                <!--        style="width: 30px "      <div class="border-t-s"></div>-->
                 <b-thead  >
                   <b-tr>
-                    <b-th class="d-none d-sm-table-cell font-w600 text-center Fs1" style=" "> </b-th>
-                    <b-th class="font-w600 Fs0-1 text-right text-nowrap pr-0" style=" ">نام و نام خانوادگی </b-th>
-                    <b-th class="  font-w600 text-center Fs0-1  pr-0 pl-0" style="width: 30px "  >تاریخ </b-th>
-                    <b-th class="  font-w600 text-center Fs0-1 text-nowrap pr-0" style="width: 30px "  >ساعت رزرو </b-th>
-                    <b-th class="  font-w600 text-center   Fs0-1 text-nowrap pr-0 pl-0" style="width: 30px "  >ساعت پایان   </b-th>
+                    <b-th class="d-none d-sm-table-cell font-w600 text-center Fs1  pr-0 pl-0 " style="width: 20% "> </b-th>
+                    <b-th class="font-w600 Fs0-1 text-right text-nowrap pr-0 pl-0" style="width: 35% ">نام و نام خانوادگی </b-th>
+                    <b-th class="  font-w600 text-center Fs0-1  pr-0 pl-0 "  style="width: 15% "  >تاریخ </b-th>
+                    <b-th class="  font-w600 text-center Fs0-1 text-nowrap  pr-0 pl-0"   style="width: 15% "  >ساعت رزرو </b-th>
+                    <b-th class="  font-w600 text-center   Fs0-1 text-nowrap pr-0 pl-0"   style="width: 15% " >ساعت پایان   </b-th>
 
 
                   </b-tr>
@@ -258,19 +308,19 @@
 
                   <b-tr v-for="(customer, index) in latestCustomers"   :key="index"   :class = "(index===0)?' ':'border-t-s'" >
 
-                    <b-td class="d-none d-sm-table-cell text-right pr-0">
+                    <b-td class="d-none d-sm-table-cell text-right  pr-0 pl-0" style="width: 20% ">
                       <img class="img-avatar img-avatar-vw" :src="`img/avatars/${customer.avatar}.jpg`" alt="Avatar">
                     </b-td>
-                    <b-td class="text-right pr-0">
+                    <b-td class="text-right  pr-0 pl-0" style="width: 35% ">
                       <span  class="  font-w600 Fs1" href="javascript:void(0)">{{ customer.name }}</span>
                     </b-td>
-                    <b-td class=" text-center" style="width: 30px " >
+                    <b-td class=" text-center  pr-0 pl-0"  style="width: 15% "  >
                       <span  class="link-fx font-w600 Fs1" href="javascript:void(0)">{{ customer.orders }}</span>
                     </b-td>
-                    <b-td class="  text-center" style="width: 30px " >
+                    <b-td class="  text-center  pr-0 pl-0"  style="width: 15% " >
                       <span  class="link-fx font-w600 Fs1" href="javascript:void(0)">{{ customer.orders }}</span>
                     </b-td>
-                    <b-td class="  text-center" style="width: 30px " >
+                    <b-td class="  text-center  pr-0 pl-0"  style="width: 15% "  >
                       <span  class="link-fx font-w600 Fs1" href="javascript:void(0)">{{ customer.orders }}</span>
                     </b-td>
                   </b-tr>
@@ -345,9 +395,8 @@
                     <div class="  br-round d-flex align-items-center p-05 mt-3 justify-content-center ">
                       <a class="Fs0-2 color-main ml-2  " href="" style="text-decoration: underline">مشاهده صفحه اعلان</a>
                     </div>
-
                     <div class="Bg-submit br-round d-flex align-items-center  mt-3 justify-content-center ">
-                      <p class="Fs0-2 text-white mb-0 text-nowrap">مشاهده جزییات</p>
+                      <p class="Fs0-2 text-white mb-0 text-nowrap p-2">مشاهده جزییات</p>
                     </div>
                   </b-col>
 

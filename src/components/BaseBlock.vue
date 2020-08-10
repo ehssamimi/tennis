@@ -48,7 +48,8 @@ export default {
   name: 'BaseBlock',
   props: {
     bLine: {
-      type: String,
+      type: Boolean,
+      default: false,
       description: 'border-bottom line'
     },
     tag: {

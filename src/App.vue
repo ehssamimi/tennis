@@ -5,6 +5,7 @@
 <style lang="scss">
 // Main Stylesheet
 @import './src/assets/scss/main';
+/*@import './src/assets/css/MyCss.css';*/
 
 // Bootstrap Vue Stylesheet
 @import '~bootstrap-vue/src/index';
@@ -16,6 +17,9 @@
 @import './src/assets/scss/oneui/themes/flat';
 @import './src/assets/scss/oneui/themes/modern';
 @import './src/assets/scss/oneui/themes/smooth';
+</style>
+<style   lang="css">
+  @import "./assets/css/MyCss.css";
 </style>
 
 <script>
